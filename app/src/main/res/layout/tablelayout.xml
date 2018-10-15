@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_margin="15sp"
+    android:layout_width="match_parent"
+    android:stretchColumns="1">
+
+    <TableRow
+        android:background="@color/colorAccent"
+        android:id="@+id/fila1"
+        android:layout_weight="1"
+        android:layout_width="0dp">
+
+        <TextView
+            android:background="@color/colorPrimaryDark"
+            android:id="@+id/texto1"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="1st"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:id="@+id/linea1"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/texto2"
+                android:background="#bfcf6f"
+                android:gravity="center"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:text="2nd"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/texto3"
+                android:gravity="center"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:text="3rd"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/fila2"
+        android:background="@color/colorPrimary"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_width="match_parent">
+
+        <TextView
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:layout_span="2"
+            android:layout_width="match_parent"
+            android:text="4th"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </TableRow>
+</TableLayout>
